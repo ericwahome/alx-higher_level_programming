@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Created on 14.09.2022
+Created on 140.09.2022
 @author: Eric Wachira
 """
 
@@ -16,3 +16,4 @@ class Square:
         Args:
             size: (:obj: 'int'): A private instance size
         """
+        self.__size = size
