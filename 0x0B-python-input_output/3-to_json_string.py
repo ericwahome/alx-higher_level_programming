@@ -1,18 +1,11 @@
 #!/usr/bin/python3
 """
-Created on 28.09.2022
-@author: Eric Wachira
+Contains the "to_json_string" fundtion
 """
 
+import json
 
-def write_file(filename="", text=""):
-    """
-    Writes inputed text to a utf-8 encoded file
-    Arguments:
-        filename (str): The name of the file to open
-        text (str): The text to write in
-    Return:
-        A file with text written
-    """
-    with open(filename, 'w', encoding='utf-8') as file:
-        return file.write(text)
+
+def to_json_string(my_obj):
+    """returns the JSON representation of an object (string)"""
+    return json.dumps(my_obj)
